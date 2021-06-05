@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddStudent.NewStudent">
+
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/drawer_iv_profilepicture"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/user_profile" />
+
+
+                <ImageView
+                    android:id="@+id/capture"
+                    android:layout_width="40dp"
+                    android:layout_height="31dp"
+                    android:layout_gravity="bottom|right"
+                    android:foregroundGravity="bottom"
+                    android:gravity="bottom|right"
+                    android:src="@drawable/profile_cam"
+                    />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="15dp">
+
+                <EditText
+                    android:id="@+id/Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/classs"
+                        android:layout_width="80dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="40dp" />
+                    <Spinner
+                        android:id="@+id/section"
+                        android:layout_width="80dp"
+                        android:layout_marginLeft="80dp"
+                        android:layout_height="40dp"/>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/SchoolName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Schoole Name"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:id="@+id/gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/Male"
+                            android:text="Male"
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"/>
+                        <RadioButton
+                            android:id="@+id/Female"
+                            android:text="Female"
+                            android:layout_marginLeft="80dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <!--Data Of Birth-->
+                <EditText
+                    android:id="@+id/DateOfBirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="DOB"/>
+
+                <EditText
+                    android:id="@+id/BloodGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Blood Group"/>
+                <EditText
+                    android:id="@+id/FatherName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Father's Name"/>
+                <EditText
+                    android:id="@+id/MotherName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mother's Name"/>
+                <EditText
+                    android:id="@+id/ParentContactNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Parents Contact Number"/>
+                <EditText
+                    android:id="@+id/AddressOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Address 1"/>
+                <EditText
+                    android:id="@+id/AddressTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Address 2"/>
+                <EditText
+                    android:id="@+id/City"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="City"/>
+                <EditText
+                    android:id="@+id/State"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="State"/>
+                <EditText
+                    android:id="@+id/Zip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Zip"/>
+                <EditText
+                    android:id="@+id/EmergencyContactNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Emergency Contact No."/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/AddLocation"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Add Location"/>
+                    <ImageView
+                        android:id="@+id/getLocation"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/location"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Submit"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>
